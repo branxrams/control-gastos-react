@@ -80,6 +80,20 @@ header h1 {
 .formulario .campo {
     display: grid;
     margin-bottom: 2rem;
+    width: 100%;
+}
+
+@media(max-width: 767px) {
+    .campo {
+        margin: auto;
+        width: 100%;
+    }
+
+    .modal{
+        padding: 20px;
+        display: flex;
+
+    }
 }
 
 .formulario label {
@@ -120,6 +134,14 @@ header h1 {
     .formulario input[type="submit"] {
         display: block;
         padding: 1rem 5rem;
+    }
+}
+
+@media (max-width: 7670px) {
+    .formulario input[type="number"],
+    .formulario input[type="submit"]
+    {
+        width: 100%;
     }
 }
 .formulario input[type="submit"]:hover {
@@ -365,6 +387,7 @@ main {
     transition-timing-function: ease-in;
     opacity: 0;
 }
+
 .modal label {
     color: var(--blanco);
 }
